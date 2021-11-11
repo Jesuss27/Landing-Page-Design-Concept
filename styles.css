@@ -1,0 +1,101 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+    --lightred:#f4c7c0;
+    --lightblue:#C7DAF3;
+    --text-color:#707070;
+    --button-bg:#313131;
+    --darkred:#fd5f46;
+
+}
+html{
+    font-family: "Poppins", sans-serif
+}
+
+/* nav  */
+
+.nav-container{
+    width:100%;
+    height:8vh;
+    display: flex;
+    justify-content: center; 
+    max-width: 1720px;
+}
+
+nav{
+    display: grid;
+    width:90%;
+    grid-template-columns: 2fr 3fr 1fr;
+    align-items: center;
+}
+.nav-buttons{
+    display:flex;
+    justify-content: space-around;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+    color:var(--text-color);
+    font-size:1.2em;
+    transition:all 0.3s ease;
+}
+a:hover{
+    color:var(--darkred)
+}
+p{
+    font-size:1.4rem;
+    font-weight: 800;
+    line-height: 1.5em;
+    color:#979494;
+}
+
+.nav-button{
+    padding:0.5em 1em;
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    background:transparent;
+    font-size:1rem;
+    transition:all 0.3s ease
+}
+
+.log-in{
+    background:var(--button-bg);
+    color:white;
+}
+
+
+
+.log-in:hover{
+    background:transparent;
+    color:var(--text-color)
+}
+
+.sign-up:hover{
+    background: var(--darkred);
+    color:white;
+    border:none;
+}
+
+/* landing page body content */
+
+.landing-page{
+    width:100%;
+    height:92vh;
+    padding: 5vh 5% 0vh;
+}
+
+.content{
+    width:50%;
+}
+h1{
+    font-size:68px;
+}
