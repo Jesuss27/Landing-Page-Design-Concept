@@ -27,7 +27,7 @@ html{
 
 nav{
     display: grid;
-    width:90%;
+    width:80%;
     grid-template-columns: 2fr 3fr 1fr;
     align-items: center;
 }
@@ -46,15 +46,15 @@ a{
     text-decoration:none;
     color:var(--text-color);
     font-size:1.2em;
-    transition:all 0.3s ease;
+    transition:all 0.3s ease
 }
 a:hover{
     color:var(--darkred)
 }
 p{
-    font-size:1.4rem;
+    font-size:2rem;
     font-weight: 800;
-    line-height: 1.5em;
+    line-height: 1.6em;
     color:#979494;
 }
 
@@ -86,15 +86,53 @@ p{
 }
 
 /* landing page body content */
+.row{
+    display: flex;
+    width:100%;
+    height:auto;
+    padding: 5vh 10% ;
+}
 
 .landing-page{
-    width:100%;
-    height:92vh;
-    padding: 5vh 5% 0vh;
+    width:50%;
+    height:62vh;
+    /* padding: 5vh 10% 25vh; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content{
+    width:100%;
+}
+.button-container{
+    width:100%;
+}
+.landing-button{
+    padding:1em 1em;
+    border-radius:20px;
+    width:60%;
+    border:none;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, var(--lightred), var(--lightblue));
+}
+.landing-button p{
+    color:rgb(82, 81, 81);
+    width:100%;
+    height:100%;
+}
+.landing-button:hover{
+    transform: scale(1.05);
+
+}
+.svg-image{
+    height:100%;
     width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transform: scale(1.25)
 }
 h1{
     font-size:68px;
