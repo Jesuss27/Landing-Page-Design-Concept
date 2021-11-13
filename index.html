@@ -47,17 +47,26 @@
         </div>
 
         <div class="svg-image">
-            <svg xmlns="http://www.w3.org/2000/svg" width="477.127" height="599.611" viewBox="0 0 477.127 599.611">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1000" viewBox="150 100 600 625">
                 <defs>
                     <filter id="filter1">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="30"/>
                     </filter>
+                    <filter id="filter2">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+                    </filter>
+                  <linearGradient id="linear-gradient" x1="0.76" y1="0.199" x2="0.043" y2="0.936" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#fff4be"/>
+                    <stop offset="0.288" stop-color="#75baff"/>
+                    <stop offset="1" stop-color="#ff5f38"/>
+                  </linearGradient>
                 </defs>
                 
-                <g id="Group_190" data-name="Group 190" transform="translate(-599.873 -122.996)">
+                <g id="Group_190" data-name="Group 190" transform="translate(-497.103 23.635)">
+                    <!-- blur effect on gradient background -->
+                    <path id="Path_20" filter="url(#filter1)" data-name="Path 20" d="M132.4,11.731h393L393,527H0Z" transform="translate(647.103 114.635)" opacity="0.48" fill="url(#linear-gradient)"/>
                   <g id="Group_204" data-name="Group 204" transform="translate(-1401.353 -1833.448)">
-                    <!-- add blur filter to ellipse SVG -->
-                    <path id="Ellipse_20" filter="url(#filter1)" data-name="Ellipse 20" d="M132.56,0c73.211,0,132.56,5.843,132.56,13.05S205.771,26.1,132.56,26.1,0,20.258,0,13.05,59.349,0,132.56,0Z" transform="translate(2058.293 2481.956)" fill="#666" opacity="0.10"/>
+                    <path id="Ellipse_20" opacity=".11" filter="url(#filter2)" data-name="Ellipse 20" d="M132.56,0c73.211,0,132.56,5.843,132.56,13.05S205.771,26.1,132.56,26.1,0,20.258,0,13.05,59.349,0,132.56,0Z" transform="translate(2058.293 2481.956)" fill="#666" />
                     <g id="Group_169" data-name="Group 169" transform="translate(2001.226 2449.943)">
                       <path id="Path_351" data-name="Path 351" d="M2028.9,2308.021c-6.011-.362-6.113,10.316-6.062,13.825.135,9.405,1.648,18.8,2.285,28.181-.07.583-.139,1.169-.21,1.752a1.135,1.135,0,0,0,1.4,1.258,1.066,1.066,0,0,0,1.431-1.086c-.032-.586-.076-1.169-.112-1.753,1.262-9.99,2.743-20.019,3.679-30.08C2031.558,2317.511,2033.394,2308.287,2028.9,2308.021Z" transform="translate(-1992.502 -2308.012)" fill="#fff4be"/>
                       <path id="Path_352" data-name="Path 352" d="M2054.025,2325.9c-4.192-4.1-11.5-.653-15.037,2.358-4.95,4.226-8.21,10.84-10.142,16.942a1.163,1.163,0,0,0,0,.751c-.241,1.246,1.6,2.173,2.294.881,3.47-6.5,11.441-9.327,17.591-12.687C2051.176,2332.809,2057.49,2329.284,2054.025,2325.9Z" transform="translate(-1990.1 -2301.552)" fill="#fff4be"/>
